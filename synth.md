@@ -260,6 +260,7 @@ End Object
 </div>
 </div>
 
+> If `Cached` is `true`, voices are cached and trying to synthesize the same text for the same voice won't use the API quota.
 
 <script>
 setTimeout(() => {
