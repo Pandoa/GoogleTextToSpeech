@@ -3,7 +3,7 @@
 
 > A Unreal Engine 5 library for the Google Text-to-Speech API.
 
-Google Text-to-Speech supports more than 450. See the complete list of voices [here](https://cloud.google.com/text-to-speech/docs/voices).
+Google Text-to-Speech supports more than 450 voices. See the complete list of voices [here](https://cloud.google.com/text-to-speech/docs/voices).
 
 Make sure to get familiar with [Google Text-to-Speech API pricing](https://cloud.google.com/text-to-speech/pricing).
 
@@ -13,9 +13,3 @@ Get started by following the guides:
 
 If you have a problem with the plugin, see the [troubleshooting section](/troubleshoting). 
 
-<div class="centered">
-
-</div>
-
-<div class="centered">
-</div>
