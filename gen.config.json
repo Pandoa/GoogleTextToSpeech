@@ -2,6 +2,7 @@
   "root_url": "http://localhost:3000",
   "out_dir": "docs/",
   "src_dir": "src/",
+  "target_url": "https://pandoa.github.io/GoogleTextToSpeech/",
   "load_timeout": 20000,
   "remove_selectors": [
     ".delete-static",
