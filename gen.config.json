@@ -16,10 +16,18 @@
     ["img src=\"/", "img src=\"./"]
   ],
   "title_append": " | Google TTS",
-  "title": {
-  },
-  "descriptions": {
-  },
-  "keywords": {
+  "pages": {
+    "index": {
+      "title": "Google Text-to-Speech for Unreal Engine"
+    },
+    "setup": {
+      "title": "How to configure Google TTS for Unreal Engine"
+    },
+    "synth": {
+      "title": "How to call Google TTS API from Unreal Engine"
+    },
+    "editor": {
+      "title": "How to synthesize Voices in UE with Google TTS"
+    }
   }
 }
