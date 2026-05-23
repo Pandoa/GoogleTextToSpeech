@@ -28,7 +28,67 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://pandoa.github.io/GoogleTextToSpeech/</loc>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/index</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/google-tts-ue5</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/google-wavenet-ue5</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-npc-tts</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-tts-prototype</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-vr-tts</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-prototyping-tts</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-metahuman-tts</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-education-tts</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-localization-tts</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-mobile-tts</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-cinematic-tts</loc>
+    <priority>1</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://pandoa.github.io/GoogleTextToSpeech/ue5-blueprint-tts</loc>
     <priority>1</priority>
     <changefreq>weekly</changefreq>
   </url>
