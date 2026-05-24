@@ -1,5 +1,5 @@
-[Download the plugin](https://www.fab.com/listings/1ed738da-6aac-46c2-bbee-d2b42c68c3a9)
-[Go to the documentation](https://pandoa.github.io/GoogleTextToSpeech/)
+- [Download the plugin](https://www.fab.com/listings/1ed738da-6aac-46c2-bbee-d2b42c68c3a9)
+- [Go to the documentation](https://pandoa.github.io/GoogleTextToSpeech/)
 
 <!--backlinks-->
 
