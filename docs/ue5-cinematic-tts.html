@@ -9,7 +9,7 @@
 	<meta property="og:title" content="Google Text-to-Speech Documentation">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://pandoa.github.io/GoogleTextToSpeech/">
-	<script type="application/ld+json">{"@context":"https://schema.org/","@type":"TechArticle","headline":"Google Text-to-Speech for Unreal Engine","name":"Google Text-to-Speech Integration for Unreal Engine","description":"The most popular Google Text-to-Speech plugin for Unreal Engine. Easily integrate Google Text-to-Speech into your game and start developing something amazing. Start in minutes by following the setup guide.","author":{"@type":"Person","name":"Pandores","url":"https://www.fab.com/sellers/Pandores"},"publisher":{"@type":"Organization","name":"Pandores Marketplace","logo":{"@type":"ImageObject","url":"https://pandoa.github.io/GoogleTextToSpeech/favicon.svg"}},"proficiencyLevel":"Beginner","datePublished":"2024-10-30T17:18:31.724Z","mainEntityOfPage":"https://pandoa.github.io/GoogleTextToSpeech/","dateModified":"2026-05-24T10:26:31.445Z"}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org/","@type":"TechArticle","headline":"Google Text-to-Speech for Unreal Engine","name":"Google Text-to-Speech Integration for Unreal Engine","description":"The most popular Google Text-to-Speech plugin for Unreal Engine. Easily integrate Google Text-to-Speech into your game and start developing something amazing. Start in minutes by following the setup guide.","author":{"@type":"Person","name":"Pandores","url":"https://www.fab.com/sellers/Pandores"},"publisher":{"@type":"Organization","name":"Pandores Marketplace","logo":{"@type":"ImageObject","url":"https://pandoa.github.io/GoogleTextToSpeech/favicon.svg"}},"proficiencyLevel":"Beginner","datePublished":"2024-10-30T17:18:31.724Z","mainEntityOfPage":"https://pandoa.github.io/GoogleTextToSpeech/","dateModified":"2026-11-10T12:58:39.187Z"}</script>
 	<style>
 		:root {
 			--theme-color: #70a2ff;
@@ -1767,8 +1767,11 @@
 			margin: 0 8%;
 		}
 	</style>
+<style type="text/css">.docsify-pagination-container{display:flex;flex-wrap:wrap;justify-content:space-between;overflow:hidden;margin:5em 0 1em;border-top:1px solid rgba(0,0,0,.07)}.pagination-item{margin-top:2.5em}.pagination-item a,.pagination-item a:hover{text-decoration:none}.pagination-item a{color:currentColor}.pagination-item a:hover .pagination-item-title{text-decoration:underline}.pagination-item:not(:last-child) a .pagination-item-label,.pagination-item:not(:last-child) a .pagination-item-subtitle,.pagination-item:not(:last-child) a .pagination-item-title{opacity:.3;transition:all .2s}.pagination-item:last-child .pagination-item-label,.pagination-item:not(:last-child) a:hover .pagination-item-label{opacity:.6}.pagination-item:not(:last-child) a:hover .pagination-item-title{opacity:1}.pagination-item-label{font-size:.8em}.pagination-item-label>*{line-height:1;vertical-align:middle}.pagination-item-label svg{height:.8em;width:auto;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px}.pagination-item--next{margin-left:auto;text-align:right}.pagination-item--next svg{margin-left:.5em}.pagination-item--previous svg{margin-right:.5em}.pagination-item-title{font-size:1.6em}.pagination-item-subtitle{text-transform:uppercase;opacity:.3}</style></head>
+<body data-page="README.md" class="ready sticky">
 <script>
 	function copyBlueprintCode(button) {
+		gtag('event', 'copy_blueprint_code', {'event_category': 'code_snippet', 'event_label': 'Copy Blueprint Code'});
 		button.innerHTML = "Copied!";
 		setTimeout(() => { button.innerHTML = "Copy Code" }, 5000);
 		var c = button.parentNode.children[0];
@@ -1776,7 +1779,8 @@
 		c.select();
 		document.execCommand("copy");
 		c.style.display = "none";
-	}</script><script>
+	}</script>
+<script>
 	var bShowCPP = false;
 	function switchCode() {
 		bShowCPP = !bShowCPP;
@@ -1788,10 +1792,12 @@
 		setCookie('bShowCPP', bShowCPP, 7);
 	}
 	function switchCpp() {
+		gtag('event', 'switch_to_cpp', {'event_category': 'code_switcher', 'event_label': 'C++'});
 		bShowCPP = false;
 		switchCode();
 	}
 	function switchBp() {
+		gtag('event', 'switch_to_blueprints', {'event_category': 'code_switcher', 'event_label': 'Blueprints'});
 		bShowCPP = true;
 		switchCode();
 	}
@@ -1821,15 +1827,14 @@
 		}, 0);
 	}
 	bShowCPP = JSON.parse(getCookie('bShowCPP'));
-</script><style type="text/css">.docsify-pagination-container{display:flex;flex-wrap:wrap;justify-content:space-between;overflow:hidden;margin:5em 0 1em;border-top:1px solid rgba(0,0,0,.07)}.pagination-item{margin-top:2.5em}.pagination-item a,.pagination-item a:hover{text-decoration:none}.pagination-item a{color:currentColor}.pagination-item a:hover .pagination-item-title{text-decoration:underline}.pagination-item:not(:last-child) a .pagination-item-label,.pagination-item:not(:last-child) a .pagination-item-subtitle,.pagination-item:not(:last-child) a .pagination-item-title{opacity:.3;transition:all .2s}.pagination-item:last-child .pagination-item-label,.pagination-item:not(:last-child) a:hover .pagination-item-label{opacity:.6}.pagination-item:not(:last-child) a:hover .pagination-item-title{opacity:1}.pagination-item-label{font-size:.8em}.pagination-item-label>*{line-height:1;vertical-align:middle}.pagination-item-label svg{height:.8em;width:auto;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1px}.pagination-item--next{margin-left:auto;text-align:right}.pagination-item--next svg{margin-left:.5em}.pagination-item--previous svg{margin-right:.5em}.pagination-item-title{font-size:1.6em}.pagination-item-subtitle{text-transform:uppercase;opacity:.3}</style></head>
-
-<body data-page="README.md" class="ready sticky"><main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><h1 class="app-name"><a class="app-name-link" data-nosearch="" href=".">Google Text-to-Speech</a></h1><div class="sidebar-nav"><ul><li><p>Quick Start</p><ul><li><a href="setup" title="Setup">Setup</a></li><li><a href="synth" title="Synthesize Text">Synthesize Text</a></li><li><a href="editor" title="Editor Tools">Editor Tools</a></li></ul></li><li><p>Support</p><ul><li><a href="troubleshoting" title="Troubleshooting">Troubleshooting</a></li><li><a href="support" title="Contact">Contact</a></li></ul></li></ul></div></aside><section class="content"><article class="markdown-section" id="main"><div class="pv-hero">
+</script>
+<main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><h1 class="app-name"><a class="app-name-link" data-nosearch="" href=".">Google Text-to-Speech</a></h1><div class="sidebar-nav"><ul><li><p>Quick Start</p><ul><li><a href="setup" title="Setup">Setup</a></li><li><a href="synth" title="Synthesize Text">Synthesize Text</a></li><li><a href="editor" title="Editor Tools">Editor Tools</a></li></ul></li><li><p>Support</p><ul><li><a href="troubleshoting" title="Troubleshooting">Troubleshooting</a></li><li><a href="support" title="Contact">Contact</a></li></ul></li></ul></div></aside><section class="content"><article class="markdown-section" id="main"><div class="pv-hero">
 <div class="pv-hero-content">
 <div class="pv-tag">Cinematics</div>
 <h1>Google TTS for Cinematics</h1>
 <p class="pv-subtitle">Create high-quality voiced cutscenes and narrative content faster in Unreal Engine 5.</p>
 <div class="pv-actions">
-<a href="https://www.fab.com/listings/1ed738da-6aac-46c2-bbee-d2b42c68c3a9" class="pv-button">
+<a href="https://www.fab.com/listings/1ed738da-6aac-46c2-bbee-d2b42c68c3a9" class="pv-button" onclick="gtag('event', 'download_plugin_click', {'event_category': 'outbound', 'event_label': 'Fab Marketplace Download'});">
 <span style="text-transform: uppercase;font-weight:bold">GET ON FAB</span>
 <img class="pv-button-icon" src="https://pandoa.github.io/FirebaseFeatures/_images/buyueicon.png" alt="Buy on Fab">
 </a>
@@ -1843,7 +1848,7 @@
 <h2>Documentation</h2>
 </div>
 <div class="pv-grid">
-<a href="/GoogleTextToSpeech/setup" class="pv-card">
+<a href="/GoogleTextToSpeech/setup" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Quick Start - Setup'});">
 <div class="pv-card-top">
 <div class="pv-card-icon">SET</div>
 <div class="pv-arrow">→</div>
@@ -1851,7 +1856,7 @@
 <h3>Setup</h3>
 <p>Install the plugin, configure Google Cloud credentials, and enable TTS in your project.</p>
 </a>
-<a href="/GoogleTextToSpeech/synth" class="pv-card">
+<a href="/GoogleTextToSpeech/synth" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Quick Start - Synth'});">
 <div class="pv-card-top">
 <div class="pv-card-icon">SYN</div>
 <div class="pv-arrow">→</div>
@@ -1859,7 +1864,7 @@
 <h3>Synthesize Text</h3>
 <p>Convert text to speech using WaveNet, Neural2, and Studio voices with one simple call.</p>
 </a>
-<a href="/GoogleTextToSpeech/editor" class="pv-card">
+<a href="/GoogleTextToSpeech/editor" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Quick Start - Editor'});">
 <div class="pv-card-top">
 <div class="pv-card-icon">EDT</div>
 <div class="pv-arrow">→</div>
@@ -1875,7 +1880,7 @@
 <h2>Need Help?</h2>
 </div>
 <div class="pv-grid">
-<a href="/GoogleTextToSpeech/troubleshoting" class="pv-card">
+<a href="/GoogleTextToSpeech/troubleshoting" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Support - Troubleshooting'});">
 <div class="pv-card-top">
 <div class="pv-card-icon">TSH</div>
 <div class="pv-arrow">→</div>
@@ -1883,7 +1888,7 @@
 <h3>Troubleshooting</h3>
 <p>Common issues, authentication errors, audio problems, and performance optimization.</p>
 </a>
-<a href="/GoogleTextToSpeech/support" class="pv-card">
+<a href="/GoogleTextToSpeech/support" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Support - Contact'});">
 <div class="pv-card-top">
 <div class="pv-card-icon">SUP</div>
 <div class="pv-arrow">→</div>
@@ -2091,6 +2096,11 @@ color:rgba(255,255,255,.58);
 	
 	<script>
   (function () {
+		window.dataLayer = window.dataLayer || [];
+		window.gtag = gtag;
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     const shouldLoadAnalytics =
       window.puppeteer !== true &&
       !navigator.webdriver &&
@@ -2099,11 +2109,6 @@ color:rgba(255,255,255,.58);
     if (!shouldLoadAnalytics) {
       return;
     }
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    window.gtag = gtag;
     gtag('js', new Date());
     const script = document.createElement('script');
     script.async = true;
