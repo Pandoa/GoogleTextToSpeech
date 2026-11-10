@@ -2,6 +2,15 @@
 
 This section covers how to setup the plugin. It assumes you already have a standard Google Account.
 
+
+<a href="https://www.fab.com/listings/1ed738da-6aac-46c2-bbee-d2b42c68c3a9"
+   target="_blank"
+   rel="noopener noreferrer"
+   onclick="gtag('event', 'download_plugin_click', {'event_category': 'outbound', 'event_label': 'Fab Marketplace Download'});"
+   style="display:inline-block; padding:10px 18px; background:#0070f3; color:#ffffff; border:1px solid #0070f3; border-radius:6px; font-weight:600; font-family:sans-serif; font-size:15px; text-decoration:none;">
+  Download the plugin
+</a>
+
 ## **1.** Enable the Google Text-To-Speech API.
 
 1. If you don't have a *Google Cloud Platform* account, sign up [here](https://cloud.google.com/free).
@@ -9,7 +18,7 @@ This section covers how to setup the plugin. It assumes you already have a stand
 
 <div class="centered">
 
-![](./_images/CreateProject.png)
+![Create project dialog in Google Cloud Console](./_images/CreateProject.png)
 
 </div>
 
@@ -17,7 +26,7 @@ This section covers how to setup the plugin. It assumes you already have a stand
 
 <div class="centered">
 
-![](./_images/OpenLibrary.png)
+![Open API & Services library](./_images/OpenLibrary.png)
 
 </div>
 
@@ -25,14 +34,14 @@ This section covers how to setup the plugin. It assumes you already have a stand
 
 <div class="centered">
 
-![](./_images/SearchGTTS.png)
+![Search for Cloud Text-to-Speech API](./_images/SearchGTTS.png)
 </div>
 
 5. Click on `Enable` to enable the Google Text-to-Speech API for the project.
 
 <div class="centered">
 
-![](./_images/EnableAPI.png)
+![Enable Cloud Text-to-Speech API](./_images/EnableAPI.png)
 </div>
 
 > You need to enable billing for the account.
@@ -43,14 +52,14 @@ This section covers how to setup the plugin. It assumes you already have a stand
 
 <div class="centered">
 
-![](./_images/CreateAPIKey.png)
+![Create API key option in Credentials](./_images/CreateAPIKey.png)
 </div>
 
 2. Once the API key is created, copy the key and click on `Edit API key`.
 
 <div class="centered">
 
-![](./_images/APIKeyCreated.png)
+![API key created with copy and edit options](./_images/APIKeyCreated.png)
 </div>
 
 3. Enter a unique name for your API key.
@@ -59,7 +68,7 @@ This section covers how to setup the plugin. It assumes you already have a stand
 
 <div class="centered">
 
-![](./_images/ConfigureAPIKey.png)
+![Configure API key restrictions](./_images/ConfigureAPIKey.png)
 </div>
 
 ## **3.** Use the API Key
@@ -80,7 +89,7 @@ Open the project's settings, and paste your API key under API Key.
 
 <div class="centered">
 
-![](./_images/PluginConfig.png)
+![Plugin settings with API key field](./_images/PluginConfig.png)
 </div>
 
 !> Doing that will package the API key in a config file. Make sure you correctly restricted its use.

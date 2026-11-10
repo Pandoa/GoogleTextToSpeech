@@ -2,6 +2,14 @@
 
 This section covers how to synthesize text using the plugin.
 
+<a href="https://www.fab.com/listings/1ed738da-6aac-46c2-bbee-d2b42c68c3a9"
+   target="_blank"
+   rel="noopener noreferrer"
+   onclick="gtag('event', 'download_plugin_click', {'event_category': 'outbound', 'event_label': 'Fab Marketplace Download'});"
+   style="display:inline-block; padding:10px 18px; background:#0070f3; color:#ffffff; border:1px solid #0070f3; border-radius:6px; font-weight:600; font-family:sans-serif; font-size:15px; text-decoration:none;">
+  Download the plugin
+</a>
+
 ## Finding a Voice
 
 Before synthesizing text, we have to choose a voice. You can find the list of voice with samples [here](https://cloud.google.com/text-to-speech/docs/voices).
