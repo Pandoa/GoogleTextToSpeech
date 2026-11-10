@@ -1,0 +1,14 @@
+# Google Text To Speech for Unreal Engine
+
+> An Unreal Engine plugin that converts text into speech using the Google Cloud Text-to-Speech API, returning results as playable sound waves and exportable editor assets.
+
+Documentation: https://pandoa.github.io/GoogleTextToSpeech/
+Plugin download: https://www.fab.com/listings/1ed738da-6aac-46c2-bbee-d2b42c68c3a9
+
+## Documentation
+
+- [Setup The Plugin](https://pandoa.github.io/GoogleTextToSpeech/setup): Enable the Cloud Text-to-Speech API, create and restrict an API key, and configure it via environment variable, project settings, or `SetAPIKey`. Includes optional C++ module setup.
+- [Synthesize Text](https://pandoa.github.io/GoogleTextToSpeech/synth): List available voices with `ListVoices`, synthesize speech to a sound wave, and play or cache the result.
+- [Editor Tools](https://pandoa.github.io/GoogleTextToSpeech/editor): Use the in-editor Voice Synthesizer panel to generate speech assets without leaving Unreal.
+- [Troubleshooting](https://pandoa.github.io/GoogleTextToSpeech/troubleshoting): Diagnosing common setup and synthesis errors.
+- [Support](https://pandoa.github.io/GoogleTextToSpeech/support): Read the Output Log for errors and contact the developer with logs attached.
