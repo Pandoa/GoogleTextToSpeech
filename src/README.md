@@ -1,5 +1,4 @@
 <div class="pv-hero">
-<div class="pv-hero-content">
 <div class="pv-tag">{{tag}}</div>
 <h1>{{hero_title}}</h1>
 <p class="pv-subtitle">{{hero_subtitle}}</p>
@@ -10,40 +9,44 @@
 </a>
 </div>
 </div>
-<div class="pv-preview-wrap"></div>
-</div>
 
 <div class="pv-section">
 <div class="pv-section-header">
 <span>{{section_quick_start}}</span>
 <h2>{{docs_title}}</h2>
 </div>
-<div class="pv-grid">
-<a href="/GoogleTextToSpeech/setup" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Quick Start - Setup'});">
-<div class="pv-card-top">
-<div class="pv-card-icon">SET</div>
-<div class="pv-arrow">→</div>
-</div>
+<ul class="pv-link-list">
+<li>
+<a href="/GoogleTextToSpeech/setup" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Quick Start - Setup'});">
+<div class="pv-link-icon">SET</div>
+<div class="pv-link-body">
 <h3>{{feature_1_title}}</h3>
 <p>{{feature_1_description}}</p>
-</a>
-<a href="/GoogleTextToSpeech/synth" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Quick Start - Synth'});">
-<div class="pv-card-top">
-<div class="pv-card-icon">SYN</div>
-<div class="pv-arrow">→</div>
 </div>
+<span class="pv-arrow">→</span>
+</a>
+</li>
+<li>
+<a href="/GoogleTextToSpeech/synth" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Quick Start - Synth'});">
+<div class="pv-link-icon">SYN</div>
+<div class="pv-link-body">
 <h3>{{feature_2_title}}</h3>
 <p>{{feature_2_description}}</p>
-</a>
-<a href="/GoogleTextToSpeech/editor" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Quick Start - Editor'});">
-<div class="pv-card-top">
-<div class="pv-card-icon">EDT</div>
-<div class="pv-arrow">→</div>
 </div>
+<span class="pv-arrow">→</span>
+</a>
+</li>
+<li>
+<a href="/GoogleTextToSpeech/editor" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Quick Start - Editor'});">
+<div class="pv-link-icon">EDT</div>
+<div class="pv-link-body">
 <h3>{{feature_3_title}}</h3>
 <p>{{feature_3_description}}</p>
-</a>
 </div>
+<span class="pv-arrow">→</span>
+</a>
+</li>
+</ul>
 </div>
 
 <div class="pv-section">
@@ -51,39 +54,51 @@
 <span>{{section_support}}</span>
 <h2>{{support_title}}</h2>
 </div>
-<div class="pv-grid">
-<a href="/GoogleTextToSpeech/troubleshoting" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Support - Troubleshooting'});">
-<div class="pv-card-top">
-<div class="pv-card-icon">TSH</div>
-<div class="pv-arrow">→</div>
-</div>
+<ul class="pv-link-list">
+<li>
+<a href="/GoogleTextToSpeech/troubleshoting" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Support - Troubleshooting'});">
+<div class="pv-link-icon">TSH</div>
+<div class="pv-link-body">
 <h3>{{support_feature_1_title}}</h3>
 <p>{{support_feature_1_description}}</p>
-</a>
-<a href="/GoogleTextToSpeech/support" class="pv-card" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Support - Contact'});">
-<div class="pv-card-top">
-<div class="pv-card-icon">SUP</div>
-<div class="pv-arrow">→</div>
 </div>
+<span class="pv-arrow">→</span>
+</a>
+</li>
+<li>
+<a href="/GoogleTextToSpeech/support" onclick="gtag('event', 'card_click', {'event_category': 'hero_card', 'event_label': 'Support - Contact'});">
+<div class="pv-link-icon">SUP</div>
+<div class="pv-link-body">
 <h3>{{support_feature_2_title}}</h3>
 <p>{{support_feature_2_description}}</p>
-</a>
 </div>
+<span class="pv-arrow">→</span>
+</a>
+</li>
+</ul>
 </div>
 
 <style>
 .pv-hero{
-display:grid;
-grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);
-gap:64px;
-align-items:center;
-padding:24px 0 12px;
+position:relative;
+padding:40px 0 36px;
+border-bottom:1px solid rgba(255,255,255,.06);
 }
-.pv-hero-content{min-width:0;}
+.pv-hero::before{
+content:"";
+position:absolute;
+top:-80px;left:-120px;
+width:520px;height:520px;
+background:radial-gradient(circle, rgba(112,162,255,.14), transparent 70%);
+filter:blur(80px);
+pointer-events:none;
+z-index:0;
+}
+.pv-hero > *{position:relative;z-index:1;}
 .pv-tag{
 display:inline-flex;
 align-items:center;
-height:34px;
+height:32px;
 padding:0 14px;
 border-radius:999px;
 background:rgba(112,162,255,.08);
@@ -94,150 +109,128 @@ font-weight:700;
 letter-spacing:.14em;
 }
 .pv-hero h1{
-margin:22px 0 0;
-font-size:clamp(72px,9vw,128px);
-line-height:.88;
+margin:20px 0 0;
+font-size:clamp(56px,7vw,88px);
+line-height:1;
 letter-spacing:-.04em;
 font-weight:800;
 color:white;
 }
 .pv-subtitle{
-margin:28px 0 0;
-max-width:680px;
-font-size:19px;
-line-height:1.8;
+margin:20px 0 0;
+max-width:660px;
+font-size:18px;
+line-height:1.75;
 color:rgba(255,255,255,.6);
 }
 .pv-subtitle a{color:#70a2ff !important;}
-.pv-actions{margin-top:38px;}
+.pv-actions{margin-top:28px;}
 .pv-button{
 display:inline-flex;
 align-items:center;
 justify-content:center;
-gap:14px;
-height:60px;
-padding:0 26px;
-border-radius:18px;
+gap:12px;
+height:52px;
+padding:0 24px;
+border-radius:12px;
 background:#70a2ff;
 color:#121212 !important;
-font-size:15px;
+font-size:14px;
 font-weight:800;
 text-decoration:none !important;
-transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
-box-shadow:0 18px 50px rgba(112,162,255,.25);
+transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+box-shadow:0 10px 30px rgba(112,162,255,.22);
 }
 .pv-button:hover{
-transform:translateY(-2px);
+transform:translateY(-1px);
 background:#8cb7ff;
-box-shadow:0 26px 70px rgba(112,162,255,.32);
+box-shadow:0 14px 40px rgba(112,162,255,.3);
 }
 .pv-button-icon{
-width:32px;
-height:32px;
+width:28px;
+height:28px;
 display:block;
 flex:none;
-border-radius: 0;
-border: none;
-box-shadow: none;
+border-radius:0;
+border:none;
+box-shadow:none;
 }
-.pv-preview-wrap{
-position:relative;
-display:flex;
-justify-content:flex-end;
-align-items:center;
-min-height:420px;
-}
-.pv-preview-wrap::before{
-content:"";
-position:absolute;
-inset:0;
-background:radial-gradient(circle at center, rgba(112,162,255,.22), transparent 70%);
-filter:blur(70px);
-z-index:0;
-}
-.pv-section{margin-top:68px;}
-.pv-section-header{
-margin-bottom:32px;
-}
+.pv-section{margin-top:52px;}
+.pv-section-header{margin-bottom:20px;}
 .pv-section-header span{
 display:block;
-margin-bottom:10px;
+margin-bottom:8px;
 font-size:11px;
 font-weight:700;
 letter-spacing:.14em;
 color:rgba(255,255,255,.32);
 }
 .pv-section-header h2{
-margin:0 0 8px 0;
-font-size:44px;
-line-height:1;
-letter-spacing:-.06em;
+margin:0;
+font-size:32px;
+line-height:1.15;
+letter-spacing:-.03em;
 color:white;
 }
-.pv-grid{
-display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:20px;
+.pv-link-list{
+list-style:none;
+margin:0;
+padding:0;
+border-top:1px solid rgba(255,255,255,.06);
 }
-.pv-card{
+.pv-link-list li{
+border-bottom:1px solid rgba(255,255,255,.06);
+}
+.pv-link-list a{
 display:flex;
-flex-direction:column;
-gap:22px;
-padding:32px;
-min-height:240px;
-border-radius:32px;
+align-items:center;
+gap:18px;
+padding:20px 14px;
 text-decoration:none !important;
-background:rgba(255,255,255,.02);
-border:1px solid rgba(255,255,255,.05);
-transition: all .18s ease;
+transition:background .12s ease;
 }
-.pv-card:hover{
-transform:translateY(-4px);
-border-color:rgba(112,162,255,.18);
-background:rgba(255,255,255,.03);
-}
-.pv-card-top{display:flex;align-items:center;justify-content:space-between;}
-.pv-card-icon{
+.pv-link-list a:hover{background:rgba(255,255,255,.02);}
+.pv-link-icon{
 display:flex;
 align-items:center;
 justify-content:center;
-width:52px;
-height:52px;
-border-radius:18px;
+flex:none;
+width:46px;
+height:46px;
+border-radius:12px;
 background:rgba(112,162,255,.08);
 border:1px solid rgba(112,162,255,.12);
-font-size:12px;
+font-size:11px;
 font-weight:700;
 letter-spacing:.08em;
 color:#70a2ff;
 }
-.pv-arrow{
-font-size:24px;
-color:rgba(255,255,255,.2);
-transition:all .18s ease;
-}
-.pv-card:hover .pv-arrow{
-transform:translateX(4px);
-color:#70a2ff;
-}
-.pv-card h3{
+.pv-link-body{flex:1;min-width:0;}
+.pv-link-body h3{
 margin:0;
-font-size:34px;
-line-height:1.05;
-letter-spacing:-.06em;
+font-size:18px;
+line-height:1.35;
+font-weight:600;
 color:white;
 }
-.pv-card p{
-margin:0;
-font-size:16px;
-line-height:1.8;
-color:rgba(255,255,255,.58);
+.pv-link-body p{
+margin:4px 0 0;
+font-size:14px;
+line-height:1.65;
+color:rgba(255,255,255,.55);
 }
-@media (max-width:1100px){
-.pv-hero{grid-template-columns:1fr;gap:42px;}
-.pv-preview-wrap{justify-content:center;}
+.pv-arrow{
+flex:none;
+font-size:18px;
+color:rgba(255,255,255,.15);
+transition:transform .12s ease, color .12s ease;
+}
+.pv-link-list a:hover .pv-arrow{
+transform:translateX(3px);
+color:#70a2ff;
 }
 @media (max-width:780px){
-.pv-grid{grid-template-columns:1fr;}
+.pv-hero{padding:24px 0 24px;}
+.pv-link-list a{padding:16px 10px;gap:14px;}
 }
 </style>
