@@ -9,7 +9,7 @@
 	<meta property="og:title" content="Google Text-to-Speech Documentation">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://pandoa.github.io/GoogleTextToSpeech/">
-	<script type="application/ld+json">{"@context":"https://schema.org/","@type":"TechArticle","headline":"How to synthesize Voices in UE with Google TTS","name":"Google Text-to-Speech Integration for Unreal Engine","description":"The most popular Google Text-to-Speech plugin for Unreal Engine. Easily integrate Google Text-to-Speech into your game and start developing something amazing. Start in minutes by following the setup guide.","author":{"@type":"Person","name":"Pandores","url":"https://www.fab.com/sellers/Pandores"},"publisher":{"@type":"Organization","name":"Pandores Marketplace","logo":{"@type":"ImageObject","url":"https://pandoa.github.io/GoogleTextToSpeech/favicon.svg"}},"proficiencyLevel":"Beginner","datePublished":"2024-10-30T17:18:31.724Z","mainEntityOfPage":"https://pandoa.github.io/GoogleTextToSpeech/","dateModified":"2026-11-10T12:58:32.857Z"}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org/","@type":"TechArticle","headline":"How to synthesize Voices in UE with Google TTS","name":"Google Text-to-Speech Integration for Unreal Engine","description":"The most popular Google Text-to-Speech plugin for Unreal Engine. Easily integrate Google Text-to-Speech into your game and start developing something amazing. Start in minutes by following the setup guide.","author":{"@type":"Person","name":"Pandores","url":"https://www.fab.com/sellers/Pandores"},"publisher":{"@type":"Organization","name":"Pandores Marketplace","logo":{"@type":"ImageObject","url":"https://pandoa.github.io/GoogleTextToSpeech/favicon.svg"}},"proficiencyLevel":"Beginner","datePublished":"2024-10-30T17:18:31.724Z","mainEntityOfPage":"https://pandoa.github.io/GoogleTextToSpeech/","dateModified":"2026-11-10T13:01:28.241Z"}</script>
 	<style>
 		:root {
 			--theme-color: #70a2ff;
@@ -1828,17 +1828,13 @@
 	}
 	bShowCPP = JSON.parse(getCookie('bShowCPP'));
 </script>
-<main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><h1 class="app-name"><a class="app-name-link" data-nosearch="" href=".">Google Text-to-Speech</a></h1><div class="sidebar-nav"><ul><li><p>Quick Start</p><ul><li><a href="setup" title="Setup">Setup</a></li><li><a href="synth" title="Synthesize Text">Synthesize Text</a></li><li class="active"><a href="editor" title="Editor Tools">Editor Tools</a></li></ul></li><li><p>Support</p><ul><li><a href="troubleshoting" title="Troubleshooting">Troubleshooting</a></li><li><a href="support" title="Contact">Contact</a></li></ul></li></ul></div></aside><section class="content"><article class="markdown-section" id="main"><h1 id="editor-tools"><a href="editor.html#editor-tools" data-id="editor-tools" class="anchor"><span>Editor Tools</span></a></h1><p>Starts by opening the voice synthesizer.</p><div class="centered">
-<p><img src="././_images/OpenVoiceSynth.png" data-origin="./_images/OpenVoiceSynth.png" alt=""></p></div>
+<main><button class="sidebar-toggle" aria-label="Menu"><div class="sidebar-toggle-button"><span></span><span></span><span></span></div></button><aside class="sidebar"><h1 class="app-name"><a class="app-name-link" data-nosearch="" href=".">Google Text-to-Speech</a></h1><div class="sidebar-nav"><ul><li><p>Quick Start</p><ul><li><a href="setup" title="Setup">Setup</a></li><li><a href="synth" title="Synthesize Text">Synthesize Text</a></li><li class="active"><a href="editor" title="Editor Tools">Editor Tools</a></li></ul></li><li><p>Support</p><ul><li><a href="troubleshoting" title="Troubleshooting">Troubleshooting</a></li><li><a href="support" title="Contact">Contact</a></li></ul></li></ul></div></aside><section class="content"><article class="markdown-section" id="main"><h1 id="editor-tools"><a href="editor.html#editor-tools" data-id="editor-tools" class="anchor"><span>Editor Tools</span></a></h1><p><a href="https://www.fab.com/listings/1ed738da-6aac-46c2-bbee-d2b42c68c3a9" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'download_plugin_click', {'event_category': 'outbound', 'event_label': 'Fab Marketplace Download'});" style="display:inline-block; padding:10px 18px; background:#0070f3; color:#ffffff; border:1px solid #0070f3; border-radius:6px; font-weight:600; font-family:sans-serif; font-size:15px; text-decoration:none;">
+  Download the plugin
+</a></p><p>The plugin adds a <strong>Voice Synthesizer</strong> panel directly inside the Unreal Editor, so you can generate speech assets without leaving the engine. Open it from the editor's toolbar to get started.</p><div class="centered">
+<p><img src="././_images/OpenVoiceSynth.png" data-origin="./_images/OpenVoiceSynth.png" alt="Open the voice synthesizer window"></p></div>
 <ol><li>If you didn't set your API key yet, enter the API key in the <code>API Key</code> field.</li><li>Select the voice for your language.</li><li>Enter the text you want to synthesize.</li><li>Add a valid path to where the asset should be created.</li><li>Click on <code>Synthesize Text</code>.</li></ol><div class="centered">
-<p><img src="././_images/EditorTool.png" data-origin="./_images/EditorTool.png" alt=""></p></div>
-<script>
-setTimeout(() => {
-    bShowCPP = !JSON.parse(getCookie('bShowCPP'));
-    switchCode();
-}, 0);
-</script>
-<div class="docsify-pagination-container">
+<p><img src="././_images/EditorTool.png" data-origin="./_images/EditorTool.png" alt="Voice synthesizer editor tool with API key, voice, text, path, and Synthesize Text button"></p></div>
+<script>changeSelectedCode();</script><div class="docsify-pagination-container">
         <div class="pagination-item pagination-item--previous">
           <a href="synth">
             <div class="pagination-item-label">
